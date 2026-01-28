@@ -173,34 +173,64 @@ color: #666;
 
 @media (max-width: 768px) {
     .vault-section {
-        margin-top: 120px;
-        /* Adjust for centered logo */
-        padding: 1.5rem 1rem;
+        margin-top: 100px;
+        padding: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: auto;
     }
 
     .vault-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 1rem;
+        gap: 0.5rem;
     }
 
     .vault-header h2 {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
+    }
+
+    .status-indicator {
+        font-size: 0.7rem;
     }
 
     .file-item {
         flex-direction: column;
         align-items: flex-start;
-        gap: 1rem;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .file-info {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .file-name {
+        font-size: 0.9rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        max-width: 100%;
     }
 
     .file-action {
         width: 100%;
-        text-align: right;
+        text-align: left;
+        /* Align left to stack neatly under name */
+        margin-top: 0.25rem;
+    }
+
+    .encrypted-text {
+        font-size: 0.7rem;
+        /* Smaller text to prevent overflow */
+        letter-spacing: 1px;
     }
 
     .download-btn {
         width: 100%;
         text-align: center;
+        padding: 0.6rem;
     }
 }
