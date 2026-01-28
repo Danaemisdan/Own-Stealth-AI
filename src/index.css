@@ -66,20 +66,24 @@ code {
 }
 
 @media (max-width: 768px) {
+
+    /* Mobile specific global adjustments */
+    body {
+        overflow-x: hidden;
+    }
+
     .logo-container {
-        /* Keep top-left alignment but adjust sizing/padding if needed */
+        /* Ensure absolute top-left positioning is maintained without interference */
         top: 20px;
         left: 20px;
         transform: none;
-        padding: 5px;
+        padding: 0;
+        border: none;
+        background: transparent;
     }
 
     .logo {
         height: 60px;
-        /* Smaller logo for mobile */
-    }
-
-    .vault-section {
-        margin-top: 100px;
+        /* Kept at requested mobile size */
     }
 }
