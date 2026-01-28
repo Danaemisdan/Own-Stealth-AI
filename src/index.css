@@ -69,3 +69,20 @@ body {
 code {
     font-family: var(--font-mono);
 }
+
+@media (max-width: 768px) {
+    .logo-container {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .vault-section {
+        margin-top: 120px;
+    }
+}
