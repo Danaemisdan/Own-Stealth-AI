@@ -42,12 +42,7 @@
     top: 20px;
     left: 20px;
     z-index: 1000;
-    background-color: #000;
-    /* Solid black background as requested */
-    padding: 10px;
-    /* Space around the icon inside the black box */
-    border-radius: 4px;
-    /* Optional slight rounding */
+    /* Removed black background and padding as requested */
 }
 
 .logo {
