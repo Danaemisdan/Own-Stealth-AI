@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+    --font-family: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --bg-color: #050505;
+    --text-color: #ffffff;
+    --accent-color: #00ff88;
+    --accent-glow: rgba(0, 255, 136, 0.4);
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --card-border: rgba(255, 255, 255, 0.1);
+    --locked-color: #555;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    /* Restore visibility but remove layout impact since logo is absolute */
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-content {
+    /* Ensure content wrapper doesn't affect layout */
+    padding: 0;
+    margin: 0;
+}
+
+/* Add spacing to the main vault section to clear the logo */
+.vault-section {
+    margin-top: 150px;
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: #000;
+    /* Solid black background as requested */
+    padding: 10px;
+    /* Space around the icon inside the black box */
+    border-radius: 4px;
+    /* Optional slight rounding */
+}
+
+.logo {
+    height: 140px;
+    /* Bigger logo as requested */
+    width: auto;
+    display: block;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+code {
+    font-family: var(--font-mono);
+}
